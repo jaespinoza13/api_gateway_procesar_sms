@@ -1,0 +1,19 @@
+{
+  "Routes": [
+    {
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7246
+        }
+      ],
+      "DownstreamPathTemplate": "/api/servicio_procesar_sms/OBTENER_SMS",
+      "DownstreamScheme": "https",
+      "UpstreamPathTemplate": "/api/wsGatewayProcesarSms/OBTENER_SMS",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DelegatingHandlers": [
+        "ProcesarSmsHandler"
+      ]
+    }
+  ]
+}
