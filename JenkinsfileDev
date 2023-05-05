@@ -12,7 +12,7 @@ pipeline {
         VERSION_PRODUCCION  = '0.0.0'
         NOMBRE_CONTENEDOR   = 'apigateway-procesarsms'
         NOMBRE_IMAGEN       = 'apigateway_procesarsms'
-        PUERTO              = '7003'
+        PUERTO              = '7002'
         PUERTO_CONTENEDOR   = '80'
         RUTA_CONFIG 		= '/config/ApiGatewayProcesarSms/'
         RUTA_LOGS = '/app/ApiGatewayProcesarSms'
