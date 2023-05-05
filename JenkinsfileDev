@@ -10,12 +10,12 @@ pipeline {
     environment {
         VERSION_DESPLIEGUE  = '0.0.1'
         VERSION_PRODUCCION  = '0.0.0'
-        NOMBRE_CONTENEDOR   = 'apigateway-callcenter-e2'
-        NOMBRE_IMAGEN       = 'apigateway_callcenter_e2'
-        PUERTO              = '6002'
+        NOMBRE_CONTENEDOR   = 'apigateway-procesarsms'
+        NOMBRE_IMAGEN       = 'apigateway_procesarsms'
+        PUERTO              = '7003'
         PUERTO_CONTENEDOR   = '80'
-        RUTA_CONFIG 		= '/config/ApiGatewayCallCenter/'
-        RUTA_LOGS = '/app/ApiGatewayCallCenter'
+        RUTA_CONFIG 		= '/config/ApiGatewayProcesarSms/'
+        RUTA_LOGS = '/app/ApiGatewayProcesarSms'
     }
 
 

@@ -6,16 +6,16 @@ EXPOSE 80
 
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
-COPY ["ApiGatewayCallCenter/ApiGatewayCallCenter.csproj", "ApiGatewayCallCenter/"]
-RUN dotnet restore "ApiGatewayCallCenter/ApiGatewayCallCenter.csproj"
+COPY ["ApiGatewayProcesarSms/ApiGatewayProcesarSms.csproj", "ApiGatewayProcesarSms/"]
+RUN dotnet restore "ApiGatewayProcesarSms/ApiGatewayProcesarSms.csproj"
 COPY . .
-WORKDIR "/src/ApiGatewayCallCenter"
-RUN dotnet build "ApiGatewayCallCenter.csproj" -c Release -o /app/build
+WORKDIR "/src/ApiGatewayProcesarSms"
+RUN dotnet build "ApiGatewayProcesarSms.csproj" -c Release -o /app/build
 
 FROM build AS publish
-RUN dotnet publish "ApiGatewayCallCenter.csproj" -c Release -o /app/publish /p:UseAppHost=false
+RUN dotnet publish "ApiGatewayProcesarSms.csproj" -c Release -o /app/publish /p:UseAppHost=false
 
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "ApiGatewayCallCenter.dll"]
+ENTRYPOINT ["dotnet", "ApiGatewayProcesarSms.dll"]
