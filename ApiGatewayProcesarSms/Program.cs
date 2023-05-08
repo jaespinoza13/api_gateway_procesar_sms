@@ -47,7 +47,7 @@ var app = builder.Build();
 app.UseCors();
 
 app.UseRouting();
-// Configure the HTTP request pipeline.
+
 if (app.Environment.IsDevelopment())
 {
     app.UseDeveloperExceptionPage();
