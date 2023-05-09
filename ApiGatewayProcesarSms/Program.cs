@@ -52,7 +52,7 @@ if (app.Environment.IsDevelopment())
 {
     app.UseDeveloperExceptionPage();
 }
-// Authorization coopmego
+
 app.UseAuthorizationMego();
 
 try
