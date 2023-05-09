@@ -15,7 +15,6 @@ pipeline {
         PUERTO              = '7002'
         PUERTO_CONTENEDOR   = '80'
         RUTA_CONFIG 		= '/Config/ApiGatewayProcesarSms/'
-        RUTA_LOGS = '/app/ApiGatewayProcesarSms'
     }
 
 
