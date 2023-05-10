@@ -19,6 +19,7 @@ namespace ApiGatewayProcesarSms.Handlers
         {
             try
             {
+                // Enviar credenciales de autenticacion al servicio wsProcesarSms
                 request.Headers.Add("Authorization-Mego", "Auth-Mego " + _auth.ws_procesar_sms);
                 return await base.SendAsync(request, cancellationToken);
             }
