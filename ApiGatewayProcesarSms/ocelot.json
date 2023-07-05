@@ -3,11 +3,14 @@
     {
       "DownstreamHostAndPorts": [
         {
+          //"Host": "localhost",     Levantar localmente
+          //"Port": 7246
           "Host": "192.168.55.62",
           "Port": 7001
         }
       ],
       "DownstreamPathTemplate": "/api/servicio_procesar_sms/OBTENER_SMS",
+      //"DownstreamScheme": "https",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/api/wsGatewayProcesarSms/OBTENER_SMS",
       "UpstreamHttpMethod": [ "POST" ],
