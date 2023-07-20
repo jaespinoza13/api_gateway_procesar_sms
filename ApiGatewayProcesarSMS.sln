@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33815.320
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiGatewayProcesarSMS", "ApiGatewayProcesarSMS.csproj", "{223237DA-F87A-4645-B29A-43E9C5FCB9A0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiGatewayProcesarSms", "ApiGatewayProcesarSms.csproj", "{223237DA-F87A-4645-B29A-43E9C5FCB9A0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

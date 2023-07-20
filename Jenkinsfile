@@ -14,7 +14,7 @@ pipeline {
         NOMBRE_IMAGEN       = 'apigateway_procesarsms'
         PUERTO              = '7002'
         PUERTO_CONTENEDOR   = '80'
-        RUTA_CONFIG 		= '/Config/ApiGatewayProcesarSMS/'
+        RUTA_CONFIG 		= '/Config/ApiGatewayProcesarSms/'
         RUTA_LOGS = '/app/ApiGatewayProcesarSms'
     }
 
