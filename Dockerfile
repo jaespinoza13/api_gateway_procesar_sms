@@ -7,16 +7,16 @@ EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
 WORKDIR /src
-COPY ["ApiGatewayProcesarMensText/ApiGatewayProcesarMensText.csproj", "ApiGatewayProcesarMensText/"]
-RUN dotnet restore "ApiGatewayProcesarMensText/ApiGatewayProcesarMensText.csproj"
+COPY ["ApiGatewayProcesarSMS/ApiGatewayProcesarSMS.csproj", "ApiGatewayProcesarSMS/"]
+RUN dotnet restore "ApiGatewayProcesarSMS/ApiGatewayProcesarSMS.csproj"
 COPY . .
-WORKDIR "/src/ApiGatewayProcesarMensText"
-RUN dotnet build "ApiGatewayProcesarMensText.csproj" -c Release -o /app/build
+WORKDIR "/src/ApiGatewayProcesarSMS"
+RUN dotnet build "ApiGatewayProcesarSMS.csproj" -c Release -o /app/build
 
 FROM build AS publish
-RUN dotnet publish "ApiGatewayProcesarMensText.csproj" -c Release -o /app/publish /p:UseAppHost=false
+RUN dotnet publish "ApiGatewayProcesarSMS.csproj" -c Release -o /app/publish /p:UseAppHost=false
 
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "ApiGatewayProcesarMensText.dll"]
+ENTRYPOINT ["dotnet", "ApiGatewayProcesarSMS.dll"]
