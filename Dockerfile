@@ -8,7 +8,7 @@ EXPOSE 443
 FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
 WORKDIR /src
 COPY ["ApiGatewayProcesarSMS/ApiGatewayProcesarSMS.csproj", "ApiGatewayProcesarSMS/"]
-RUN dotnet restore "ApiGatewayProcesarSMS/ApiGatewayProcesarSMS.csproj"
+RUN dotnet restore "ApiGatewayProcesarSMS/ApiGatewayProcesarMensText.csproj"
 COPY . .
 WORKDIR "/src/ApiGatewayProcesarSMS"
 RUN dotnet build "ApiGatewayProcesarSMS.csproj" -c Release -o /app/build
