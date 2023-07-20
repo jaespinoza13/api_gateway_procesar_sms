@@ -31,6 +31,6 @@ namespace ApiGatewayProcesarSms.Services
                 Hash = hashed,
                 salt = salt
             };
-        }        
+        }
     }
 }

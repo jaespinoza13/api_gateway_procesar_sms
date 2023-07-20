@@ -2,6 +2,7 @@
 using System.Text;
 using Microsoft.Extensions.Options;
 using ApiGatewayProcesarSms.Entities;
+using System;
 
 namespace ApiGatewayProcesarSms.Middleware
 {
@@ -24,13 +25,15 @@ namespace ApiGatewayProcesarSms.Middleware
 
         public async Task Invoke(HttpContext httpContext)
         {
-            string authHeader = httpContext.Request.Headers["Authorization-Gateway"];
+            //   string authHeader = httpContext.Request.Headers["Authorization-Gateway"];
+            var authHeader = httpContext.Request.Headers["Authorization-Gateway"].FirstOrDefault();
+
 
             try
             {
-                if (authHeader != null && authHeader.StartsWith("Auth-Gateway"))
+                if (!string.IsNullOrEmpty(authHeader) && authHeader.StartsWith("Auth-Gateway "))
                 {
-                    string endodedAuthorization = authHeader.Substring("Auth-Gateway ".Length).Trim();
+                    string endodedAuthorization = authHeader["Auth-Gateway ".Length..].Trim();
                     if (endodedAuthorization.Equals(_settings.auth_gateway_procesarsms))
                     {
                         await _next.Invoke(httpContext);
@@ -49,7 +52,7 @@ namespace ApiGatewayProcesarSms.Middleware
             {
                 httpContext.Response.StatusCode = Convert.ToInt32(HttpStatusCode.BadGateway);
                 byte[] data = Encoding.UTF8.GetBytes(ex.Message.ToString());
-                await httpContext.Response.Body.WriteAsync(data, 0, data.Length);
+                await httpContext.Response.Body.WriteAsync(data);
                 throw new ArgumentException(ex.Message);
             }
         }

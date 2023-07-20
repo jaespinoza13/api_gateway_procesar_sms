@@ -26,9 +26,9 @@ namespace ApiGatewayProcesarSms.Services
             return respuesta["str_token"].ToString()!;
         }
 
-        public async Task<T> PostRestServiceDataAsync<T>(string serializedData, 
-            string serviceAddress, 
-            string parameteres, 
+        public async Task<T> PostRestServiceDataAsync<T>(string serializedData,
+            string serviceAddress,
+            string parameteres,
             string auth)
         {
             HttpClient client = new();

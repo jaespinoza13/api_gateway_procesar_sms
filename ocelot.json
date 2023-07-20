@@ -3,7 +3,7 @@
     {
       "DownstreamHostAndPorts": [
         {
-          //"Host": "localhost",     Levantar localmente
+          //"Host": "localhost",     //Levantar localmente
           //"Port": 7246
           "Host": "192.168.55.62",
           "Port": 7001
