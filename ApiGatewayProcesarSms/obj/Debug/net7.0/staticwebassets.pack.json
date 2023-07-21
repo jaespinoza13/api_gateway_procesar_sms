@@ -1,0 +1,25 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\jespinoza\\Documents\\Git\\Bloquear_Transferencias_David_Arevalo\\Git\\api_gateway_procesar_sms\\ApiGatewayProcesarSms\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\ApiGatewayProcesarSms.bundle.scp.css",
+      "PackagePath": "staticwebassets\\ApiGatewayProcesarSms.bundle.scp.css"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.ApiGatewayProcesarSms.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.ApiGatewayProcesarSms.props",
+      "PackagePath": "build\\ApiGatewayProcesarSms.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.ApiGatewayProcesarSms.props",
+      "PackagePath": "buildMultiTargeting\\ApiGatewayProcesarSms.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.ApiGatewayProcesarSms.props",
+      "PackagePath": "buildTransitive\\ApiGatewayProcesarSms.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
