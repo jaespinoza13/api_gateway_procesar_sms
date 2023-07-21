@@ -1,0 +1,6 @@
+projectKey=api_gateway_procesar_sms_jespinoza
+serverUrl=http://192.168.60.80:9000
+serverVersion=9.4.0.54424
+dashboardUrl=http://192.168.60.80:9000/dashboard?id=api_gateway_procesar_sms_jespinoza
+ceTaskId=AYl6BtueCAad_QG1eUfL
+ceTaskUrl=http://192.168.60.80:9000/api/ce/task?id=AYl6BtueCAad_QG1eUfL
