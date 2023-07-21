@@ -1,11 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\ApiGatewayProcesarSms",
-    "\\bin",
-    "\\bin\\Debug",
-    "\\bin\\Debug\\net6.0"
+    "\\ApiGatewayProcesarSms"
   ],
-  "SelectedNode": "\\bin",
+  "SelectedNode": "\\ApiGatewayProcesarSms.sln",
   "PreviewInSolutionExplorer": false
 }
