@@ -543,9 +543,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jespinoza\\Documents\\Git\\Bloquear_Transferencias_David_Arevalo\\Git\\api_gateway_procesar_sms\\ApiGatewayProcesarSms\\ApiGatewayProcesarSms.csproj",
-      "projectName": "ApiGatewayProcesarSms",
-      "projectPath": "C:\\Users\\jespinoza\\Documents\\Git\\Bloquear_Transferencias_David_Arevalo\\Git\\api_gateway_procesar_sms\\ApiGatewayProcesarSms\\ApiGatewayProcesarSms.csproj",
+      "projectUniqueName": "C:\\Users\\jespinoza\\Documents\\Git\\Bloquear_Transferencias_David_Arevalo\\Git\\api_gateway_procesar_sms\\ApiGatewayProcesarSms\\ApiGatewayProcesarTransf.csproj",
+      "projectName": "ApiGatewayProcesarTransf",
+      "projectPath": "C:\\Users\\jespinoza\\Documents\\Git\\Bloquear_Transferencias_David_Arevalo\\Git\\api_gateway_procesar_sms\\ApiGatewayProcesarSms\\ApiGatewayProcesarTransf.csproj",
       "packagesPath": "C:\\Users\\jespinoza\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\jespinoza\\Documents\\Git\\Bloquear_Transferencias_David_Arevalo\\Git\\api_gateway_procesar_sms\\ApiGatewayProcesarSms\\obj\\",
       "projectStyle": "PackageReference",
