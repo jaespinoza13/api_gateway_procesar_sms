@@ -25,7 +25,6 @@ namespace ApiGatewayProcesarSms.Middleware
 
         public async Task Invoke(HttpContext httpContext)
         {
-            //   string authHeader = httpContext.Request.Headers["Authorization-Gateway"];
             var authHeader = httpContext.Request.Headers["Authorization-Gateway"].FirstOrDefault();
 
 

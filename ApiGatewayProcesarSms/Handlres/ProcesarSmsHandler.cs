@@ -6,13 +6,12 @@ namespace ApiGatewayProcesarSms.Handlers
 {
     public class ProcesarSmsHandler : DelegatingHandler
     {
-        private readonly ApiSettings _settings;
+        
         private readonly MicroservicesAuth _auth;
 
         public ProcesarSmsHandler(IOptionsMonitor<MicroservicesAuth> auth, IOptionsMonitor<ApiSettings> settings)
         {
             this._auth = auth.CurrentValue;
-            this._settings = settings.CurrentValue;
         }
 
         protected override async Task<HttpResponseMessage> SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
