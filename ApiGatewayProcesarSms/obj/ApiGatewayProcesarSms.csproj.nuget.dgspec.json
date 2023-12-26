@@ -1,23 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jespinoza\\Documents\\Git\\Bloquear_Transferencias_David_Arevalo\\Git\\api_gateway_procesar_sms\\ApiGatewayProcesarSms\\ApiGatewayProcesarSms.csproj": {}
+    "C:\\Development_Jhonny_Espinoza\\Procesar SMS\\api_gateway_procesar_sms\\ApiGatewayProcesarSms\\ApiGatewayProcesarSms.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jespinoza\\Documents\\Git\\Bloquear_Transferencias_David_Arevalo\\Git\\api_gateway_procesar_sms\\ApiGatewayProcesarSms\\ApiGatewayProcesarSms.csproj": {
+    "C:\\Development_Jhonny_Espinoza\\Procesar SMS\\api_gateway_procesar_sms\\ApiGatewayProcesarSms\\ApiGatewayProcesarSms.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jespinoza\\Documents\\Git\\Bloquear_Transferencias_David_Arevalo\\Git\\api_gateway_procesar_sms\\ApiGatewayProcesarSms\\ApiGatewayProcesarSms.csproj",
+        "projectUniqueName": "C:\\Development_Jhonny_Espinoza\\Procesar SMS\\api_gateway_procesar_sms\\ApiGatewayProcesarSms\\ApiGatewayProcesarSms.csproj",
         "projectName": "ApiGatewayProcesarSms",
-        "projectPath": "C:\\Users\\jespinoza\\Documents\\Git\\Bloquear_Transferencias_David_Arevalo\\Git\\api_gateway_procesar_sms\\ApiGatewayProcesarSms\\ApiGatewayProcesarSms.csproj",
+        "projectPath": "C:\\Development_Jhonny_Espinoza\\Procesar SMS\\api_gateway_procesar_sms\\ApiGatewayProcesarSms\\ApiGatewayProcesarSms.csproj",
         "packagesPath": "C:\\Users\\jespinoza\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jespinoza\\Documents\\Git\\Bloquear_Transferencias_David_Arevalo\\Git\\api_gateway_procesar_sms\\ApiGatewayProcesarSms\\obj\\",
+        "outputPath": "C:\\Development_Jhonny_Espinoza\\Procesar SMS\\api_gateway_procesar_sms\\ApiGatewayProcesarSms\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
           "C:\\Users\\jespinoza\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -25,7 +26,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\sdk\\7.0.304\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -50,7 +50,7 @@
             },
             "Ocelot": {
               "target": "Package",
-              "version": "[18.0.0, )"
+              "version": "[22.0.1, )"
             }
           },
           "imports": [
@@ -72,7 +72,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

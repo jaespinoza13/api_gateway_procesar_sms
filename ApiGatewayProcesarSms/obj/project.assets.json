@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     "net6.0": {
-      "FluentValidation/10.3.6": {
+      "FluentValidation/11.8.0": {
         "type": "package",
         "compile": {
           "lib/net6.0/FluentValidation.dll": {
@@ -15,7 +15,20 @@
           }
         }
       },
-      "Microsoft.AspNetCore.JsonPatch/6.0.1": {
+      "IPAddressRange/6.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/IPAddressRange.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/IPAddressRange.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.JsonPatch/6.0.25": {
         "type": "package",
         "dependencies": {
           "Microsoft.CSharp": "4.7.0",
@@ -32,7 +45,7 @@
           }
         }
       },
-      "Microsoft.AspNetCore.MiddlewareAnalysis/6.0.1": {
+      "Microsoft.AspNetCore.MiddlewareAnalysis/6.0.25": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0"
@@ -51,10 +64,10 @@
           "Microsoft.AspNetCore.App"
         ]
       },
-      "Microsoft.AspNetCore.Mvc.NewtonsoftJson/6.0.1": {
+      "Microsoft.AspNetCore.Mvc.NewtonsoftJson/6.0.25": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.JsonPatch": "6.0.1",
+          "Microsoft.AspNetCore.JsonPatch": "6.0.25",
           "Newtonsoft.Json": "13.0.1",
           "Newtonsoft.Json.Bson": "1.0.2"
         },
@@ -97,7 +110,7 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
-      "Microsoft.Extensions.DiagnosticAdapter/3.1.22": {
+      "Microsoft.Extensions.DiagnosticAdapter/3.1.32": {
         "type": "package",
         "dependencies": {
           "System.Diagnostics.DiagnosticSource": "4.7.1"
@@ -149,19 +162,24 @@
           }
         }
       },
-      "Ocelot/18.0.0": {
+      "Ocelot/22.0.1": {
         "type": "package",
         "dependencies": {
-          "FluentValidation": "10.3.6",
-          "Microsoft.AspNetCore.MiddlewareAnalysis": "6.0.1",
-          "Microsoft.AspNetCore.Mvc.NewtonsoftJson": "6.0.1",
-          "Microsoft.Extensions.DiagnosticAdapter": "3.1.22"
+          "FluentValidation": "11.8.0",
+          "IPAddressRange": "6.0.0",
+          "Microsoft.AspNetCore.MiddlewareAnalysis": "6.0.25",
+          "Microsoft.AspNetCore.Mvc.NewtonsoftJson": "6.0.25",
+          "Microsoft.Extensions.DiagnosticAdapter": "3.1.32"
         },
         "compile": {
-          "lib/net6.0/Ocelot.dll": {}
+          "lib/net6.0/Ocelot.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net6.0/Ocelot.dll": {}
+          "lib/net6.0/Ocelot.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Diagnostics.DiagnosticSource/4.7.1": {
@@ -180,31 +198,60 @@
     }
   },
   "libraries": {
-    "FluentValidation/10.3.6": {
-      "sha512": "iMd370ZDx6ydm8t7bIFdRbSKX0e42lpvCtifUSbTSXOk5iKjmgl7HU0PXBhIWQAyIRi3gCwfMI9luj8H6K+byw==",
+    "FluentValidation/11.8.0": {
+      "sha512": "TiEaaYqSIAS+wXQv46LRm8Mca092XYNePD0n231Hqlkmm5FuToZoWnjI1ef/vJUxBzqR7/k2vaVQXxijNgVKRQ==",
       "type": "package",
-      "path": "fluentvalidation/10.3.6",
+      "path": "fluentvalidation/11.8.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "README.md",
         "fluent-validation-icon.png",
-        "fluentvalidation.10.3.6.nupkg.sha512",
+        "fluentvalidation.11.8.0.nupkg.sha512",
         "fluentvalidation.nuspec",
         "lib/net5.0/FluentValidation.dll",
         "lib/net5.0/FluentValidation.xml",
         "lib/net6.0/FluentValidation.dll",
         "lib/net6.0/FluentValidation.xml",
+        "lib/net7.0/FluentValidation.dll",
+        "lib/net7.0/FluentValidation.xml",
         "lib/netstandard2.0/FluentValidation.dll",
         "lib/netstandard2.0/FluentValidation.xml",
         "lib/netstandard2.1/FluentValidation.dll",
         "lib/netstandard2.1/FluentValidation.xml"
       ]
     },
-    "Microsoft.AspNetCore.JsonPatch/6.0.1": {
-      "sha512": "vLgQbgudEQfGNaGyAvm+jlfLHu5Ynav8/RnhwM0QaKFjVW2crEOGm7tRHHjM5iofF8VZnEYfyvUvyK82dBej1w==",
+    "IPAddressRange/6.0.0": {
+      "sha512": "3vLppw2bi+LjM/M5TRQBrQ2kRYFge3+aphf5FiKefEImBG/sUM5sYV2TVYbWnZTHTnW24Gc5CucsohGu/GN9gQ==",
       "type": "package",
-      "path": "microsoft.aspnetcore.jsonpatch/6.0.1",
+      "path": "ipaddressrange/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "ipaddressrange.6.0.0.nupkg.sha512",
+        "ipaddressrange.nuspec",
+        "lib/net462/IPAddressRange.dll",
+        "lib/net462/IPAddressRange.xml",
+        "lib/net5.0/IPAddressRange.dll",
+        "lib/net5.0/IPAddressRange.xml",
+        "lib/net6.0/IPAddressRange.dll",
+        "lib/net6.0/IPAddressRange.xml",
+        "lib/net7.0/IPAddressRange.dll",
+        "lib/net7.0/IPAddressRange.xml",
+        "lib/net8.0/IPAddressRange.dll",
+        "lib/net8.0/IPAddressRange.xml",
+        "lib/netstandard1.4/IPAddressRange.dll",
+        "lib/netstandard1.4/IPAddressRange.xml",
+        "lib/netstandard2.1/IPAddressRange.dll",
+        "lib/netstandard2.1/IPAddressRange.xml",
+        "nupkg-icon.png"
+      ]
+    },
+    "Microsoft.AspNetCore.JsonPatch/6.0.25": {
+      "sha512": "65JTjUGoisNR0pmLr3r6clbi6kguLlDqraNeWpwr73e7HunGt0NnfZBpjsRrmNeIcJYqyGU8WN0Hi2Xf4U7GNg==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.jsonpatch/6.0.25",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -216,14 +263,14 @@
         "lib/net6.0/Microsoft.AspNetCore.JsonPatch.xml",
         "lib/netstandard2.0/Microsoft.AspNetCore.JsonPatch.dll",
         "lib/netstandard2.0/Microsoft.AspNetCore.JsonPatch.xml",
-        "microsoft.aspnetcore.jsonpatch.6.0.1.nupkg.sha512",
+        "microsoft.aspnetcore.jsonpatch.6.0.25.nupkg.sha512",
         "microsoft.aspnetcore.jsonpatch.nuspec"
       ]
     },
-    "Microsoft.AspNetCore.MiddlewareAnalysis/6.0.1": {
-      "sha512": "qghcWvZrYsanZtVYauEWsaXarvRppbMh2lZIFPJhgGyylG/KABLDOaNG74zvwvvMS2RLv5IDJduIw9eVLYGhxw==",
+    "Microsoft.AspNetCore.MiddlewareAnalysis/6.0.25": {
+      "sha512": "oSX1x5g+iY4qQFlxFTCLD230sSxZ1lObVKZ4eCYw7xh6+uqzlgfSz/7Cx2ourUYFc4il8ZzaLn0VzTRvWw6u7g==",
       "type": "package",
-      "path": "microsoft.aspnetcore.middlewareanalysis/6.0.1",
+      "path": "microsoft.aspnetcore.middlewareanalysis/6.0.25",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -231,14 +278,14 @@
         "THIRD-PARTY-NOTICES.TXT",
         "lib/net6.0/Microsoft.AspNetCore.MiddlewareAnalysis.dll",
         "lib/net6.0/Microsoft.AspNetCore.MiddlewareAnalysis.xml",
-        "microsoft.aspnetcore.middlewareanalysis.6.0.1.nupkg.sha512",
+        "microsoft.aspnetcore.middlewareanalysis.6.0.25.nupkg.sha512",
         "microsoft.aspnetcore.middlewareanalysis.nuspec"
       ]
     },
-    "Microsoft.AspNetCore.Mvc.NewtonsoftJson/6.0.1": {
-      "sha512": "UMMDrtDzY1tug3Q6RFmgtknJ65nj3IxI/iVqrRFwKDIeiiBc8DMfxS1cZPWfaGmPfVulgaa8qHvQijaLpa8p7Q==",
+    "Microsoft.AspNetCore.Mvc.NewtonsoftJson/6.0.25": {
+      "sha512": "dBDJsmzQMRgcBy0U5lvosHls5aLILL+0tNx+eat7vgcfNzpL2j9Cd1+Pg5j+xy+lZZjyf9MQbMdNp4vE6E1L4A==",
       "type": "package",
-      "path": "microsoft.aspnetcore.mvc.newtonsoftjson/6.0.1",
+      "path": "microsoft.aspnetcore.mvc.newtonsoftjson/6.0.25",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -246,7 +293,7 @@
         "THIRD-PARTY-NOTICES.TXT",
         "lib/net6.0/Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll",
         "lib/net6.0/Microsoft.AspNetCore.Mvc.NewtonsoftJson.xml",
-        "microsoft.aspnetcore.mvc.newtonsoftjson.6.0.1.nupkg.sha512",
+        "microsoft.aspnetcore.mvc.newtonsoftjson.6.0.25.nupkg.sha512",
         "microsoft.aspnetcore.mvc.newtonsoftjson.nuspec"
       ]
     },
@@ -344,10 +391,10 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "Microsoft.Extensions.DiagnosticAdapter/3.1.22": {
-      "sha512": "/XNnZI0vTnaYS5phEw6iDmtB7zLBvdqb9mV6uHCH/DM9eXRVlHCRAE4TTG+mM/1dI+XKQJMOnzVNlD/yHSiKQQ==",
+    "Microsoft.Extensions.DiagnosticAdapter/3.1.32": {
+      "sha512": "oDv3wt+Q5cmaSfOQ3Cdu6dF6sn/x5gzWdNpOq4ajBwCMWYBr6CchncDvB9pF83ORlbDuX32MsVLOPGPxW4Lx4g==",
       "type": "package",
-      "path": "microsoft.extensions.diagnosticadapter/3.1.22",
+      "path": "microsoft.extensions.diagnosticadapter/3.1.32",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -358,7 +405,7 @@
         "lib/netcoreapp2.0/Microsoft.Extensions.DiagnosticAdapter.xml",
         "lib/netstandard2.0/Microsoft.Extensions.DiagnosticAdapter.dll",
         "lib/netstandard2.0/Microsoft.Extensions.DiagnosticAdapter.xml",
-        "microsoft.extensions.diagnosticadapter.3.1.22.nupkg.sha512",
+        "microsoft.extensions.diagnosticadapter.3.1.32.nupkg.sha512",
         "microsoft.extensions.diagnosticadapter.nuspec"
       ]
     },
@@ -491,15 +538,20 @@
         "newtonsoft.json.bson.nuspec"
       ]
     },
-    "Ocelot/18.0.0": {
-      "sha512": "HAde/NLh+q1Szm54p218hKrd4ceYdNZ2UrfcTBbxJpSmPtXq0ER95otSLP+fnrFLT2UULUdkRL4noDZmG1A4AQ==",
+    "Ocelot/22.0.1": {
+      "sha512": "thTMqIUu2Olj8n9YXzAtds8Hr5gK6IA3Gjrl4XGjebEpe7qRpigcsJ2dKzXcXqn7KIH7lpS38sjCst15HdYwQw==",
       "type": "package",
-      "path": "ocelot/18.0.0",
+      "path": "ocelot/22.0.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/net6.0/Ocelot.dll",
-        "ocelot.18.0.0.nupkg.sha512",
+        "lib/net6.0/Ocelot.xml",
+        "lib/net7.0/Ocelot.dll",
+        "lib/net7.0/Ocelot.xml",
+        "lib/net8.0/Ocelot.dll",
+        "lib/net8.0/Ocelot.xml",
+        "ocelot.22.0.1.nupkg.sha512",
         "ocelot.nuspec"
       ]
     },
@@ -533,27 +585,28 @@
   "projectFileDependencyGroups": {
     "net6.0": [
       "Microsoft.VisualStudio.Azure.Containers.Tools.Targets >= 1.18.1",
-      "Ocelot >= 18.0.0"
+      "Ocelot >= 22.0.1"
     ]
   },
   "packageFolders": {
     "C:\\Users\\jespinoza\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jespinoza\\Documents\\Git\\Bloquear_Transferencias_David_Arevalo\\Git\\api_gateway_procesar_sms\\ApiGatewayProcesarSms\\ApiGatewayProcesarTransf.csproj",
-      "projectName": "ApiGatewayProcesarTransf",
-      "projectPath": "C:\\Users\\jespinoza\\Documents\\Git\\Bloquear_Transferencias_David_Arevalo\\Git\\api_gateway_procesar_sms\\ApiGatewayProcesarSms\\ApiGatewayProcesarTransf.csproj",
+      "projectUniqueName": "C:\\Development_Jhonny_Espinoza\\Procesar SMS\\api_gateway_procesar_sms\\ApiGatewayProcesarSms\\ApiGatewayProcesarSms.csproj",
+      "projectName": "ApiGatewayProcesarSms",
+      "projectPath": "C:\\Development_Jhonny_Espinoza\\Procesar SMS\\api_gateway_procesar_sms\\ApiGatewayProcesarSms\\ApiGatewayProcesarSms.csproj",
       "packagesPath": "C:\\Users\\jespinoza\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jespinoza\\Documents\\Git\\Bloquear_Transferencias_David_Arevalo\\Git\\api_gateway_procesar_sms\\ApiGatewayProcesarSms\\obj\\",
+      "outputPath": "C:\\Development_Jhonny_Espinoza\\Procesar SMS\\api_gateway_procesar_sms\\ApiGatewayProcesarSms\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
         "C:\\Users\\jespinoza\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -561,7 +614,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\sdk\\7.0.304\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -586,7 +638,7 @@
           },
           "Ocelot": {
             "target": "Package",
-            "version": "[18.0.0, )"
+            "version": "[22.0.1, )"
           }
         },
         "imports": [
@@ -608,7 +660,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

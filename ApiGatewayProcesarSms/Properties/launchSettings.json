@@ -1,6 +1,6 @@
 {
   "profiles": {
-    "ApiGatewayCallCenter": {
+    "ApiGatewayProcesarSms": {
       "commandName": "Project",
       "launchBrowser": true,
       "launchUrl": "swagger",
