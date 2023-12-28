@@ -1,0 +1,46 @@
+{
+  "Version": 1,
+  "Hash": "Kf9XX2m5c62jSXMiKnBZkMvDiukJGOgd81u9WsKYb10=",
+  "Source": "ApiGatewayProcesarSms",
+  "BasePath": "_content/ApiGatewayProcesarSms",
+  "Mode": "Default",
+  "ManifestType": "Publish",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [
+    {
+      "Identity": "C:\\Git\\Api_gateways_procesar_sms\\ApiGatewayProcesarSms\\ApiGatewayProcesarSms\\obj\\Release\\net7.0\\scopedcss\\bundle\\ApiGatewayProcesarSms.styles.css",
+      "SourceId": "ApiGatewayProcesarSms",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Git\\Api_gateways_procesar_sms\\ApiGatewayProcesarSms\\ApiGatewayProcesarSms\\obj\\Release\\net7.0\\scopedcss\\bundle\\",
+      "BasePath": "_content/ApiGatewayProcesarSms",
+      "RelativePath": "ApiGatewayProcesarSms.styles.css",
+      "AssetKind": "All",
+      "AssetMode": "CurrentProject",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ApplicationBundle",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Git\\Api_gateways_procesar_sms\\ApiGatewayProcesarSms\\ApiGatewayProcesarSms\\obj\\Release\\net7.0\\scopedcss\\bundle\\ApiGatewayProcesarSms.styles.css"
+    },
+    {
+      "Identity": "C:\\Git\\Api_gateways_procesar_sms\\ApiGatewayProcesarSms\\ApiGatewayProcesarSms\\obj\\Release\\net7.0\\scopedcss\\projectbundle\\ApiGatewayProcesarSms.bundle.scp.css",
+      "SourceId": "ApiGatewayProcesarSms",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Git\\Api_gateways_procesar_sms\\ApiGatewayProcesarSms\\ApiGatewayProcesarSms\\obj\\Release\\net7.0\\scopedcss\\projectbundle\\",
+      "BasePath": "_content/ApiGatewayProcesarSms",
+      "RelativePath": "ApiGatewayProcesarSms.bundle.scp.css",
+      "AssetKind": "All",
+      "AssetMode": "Reference",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ProjectBundle",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Git\\Api_gateways_procesar_sms\\ApiGatewayProcesarSms\\ApiGatewayProcesarSms\\obj\\Release\\net7.0\\scopedcss\\projectbundle\\ApiGatewayProcesarSms.bundle.scp.css"
+    }
+  ]
+}

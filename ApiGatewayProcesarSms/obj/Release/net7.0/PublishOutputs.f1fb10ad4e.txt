@@ -1,0 +1,16 @@
+C:\Git\Api_gateways_procesar_sms\ApiGatewayProcesarSms\ApiGatewayProcesarSms\obj\Release\net7.0\PubTmp\Out\ApiGatewayProcesarSms.exe
+C:\Git\Api_gateways_procesar_sms\ApiGatewayProcesarSms\ApiGatewayProcesarSms\obj\Release\net7.0\PubTmp\Out\appsettings.Development.json
+C:\Git\Api_gateways_procesar_sms\ApiGatewayProcesarSms\ApiGatewayProcesarSms\obj\Release\net7.0\PubTmp\Out\appsettings.json
+C:\Git\Api_gateways_procesar_sms\ApiGatewayProcesarSms\ApiGatewayProcesarSms\obj\Release\net7.0\PubTmp\Out\ocelot.json
+C:\Git\Api_gateways_procesar_sms\ApiGatewayProcesarSms\ApiGatewayProcesarSms\obj\Release\net7.0\PubTmp\Out\ApiGatewayProcesarSms.dll
+C:\Git\Api_gateways_procesar_sms\ApiGatewayProcesarSms\ApiGatewayProcesarSms\obj\Release\net7.0\PubTmp\Out\ApiGatewayProcesarSms.deps.json
+C:\Git\Api_gateways_procesar_sms\ApiGatewayProcesarSms\ApiGatewayProcesarSms\obj\Release\net7.0\PubTmp\Out\ApiGatewayProcesarSms.runtimeconfig.json
+C:\Git\Api_gateways_procesar_sms\ApiGatewayProcesarSms\ApiGatewayProcesarSms\obj\Release\net7.0\PubTmp\Out\ApiGatewayProcesarSms.pdb
+C:\Git\Api_gateways_procesar_sms\ApiGatewayProcesarSms\ApiGatewayProcesarSms\obj\Release\net7.0\PubTmp\Out\FluentValidation.dll
+C:\Git\Api_gateways_procesar_sms\ApiGatewayProcesarSms\ApiGatewayProcesarSms\obj\Release\net7.0\PubTmp\Out\Microsoft.AspNetCore.JsonPatch.dll
+C:\Git\Api_gateways_procesar_sms\ApiGatewayProcesarSms\ApiGatewayProcesarSms\obj\Release\net7.0\PubTmp\Out\Microsoft.AspNetCore.MiddlewareAnalysis.dll
+C:\Git\Api_gateways_procesar_sms\ApiGatewayProcesarSms\ApiGatewayProcesarSms\obj\Release\net7.0\PubTmp\Out\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Git\Api_gateways_procesar_sms\ApiGatewayProcesarSms\ApiGatewayProcesarSms\obj\Release\net7.0\PubTmp\Out\Microsoft.Extensions.DiagnosticAdapter.dll
+C:\Git\Api_gateways_procesar_sms\ApiGatewayProcesarSms\ApiGatewayProcesarSms\obj\Release\net7.0\PubTmp\Out\Newtonsoft.Json.dll
+C:\Git\Api_gateways_procesar_sms\ApiGatewayProcesarSms\ApiGatewayProcesarSms\obj\Release\net7.0\PubTmp\Out\Newtonsoft.Json.Bson.dll
+C:\Git\Api_gateways_procesar_sms\ApiGatewayProcesarSms\ApiGatewayProcesarSms\obj\Release\net7.0\PubTmp\Out\Ocelot.dll
