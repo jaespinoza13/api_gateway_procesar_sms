@@ -71,7 +71,7 @@ pipeline {
                         -e TZ=${TZ} \
                         -v ${RUTA_CONFIG}/appsettings.json:/app/appsettings.json/ \
                         -v ${RUTA_CONFIG}/ocelot.json:/app/ocelot.json/ \
-                        -v ${RUTA_LOGS}:/app/Logs/ \                        
+                        -v ${RUTA_LOGS}:/app/Logs/ \
                          ${NOMBRE_IMAGEN}:${VERSION_PRODUCCION}
                     '''
             slackSend color: '#FE2D00', failOnError:true, message:"Despliegue fallido 😬 - ${env.JOB_NAME} he reversado a la version ${VERSION_PRODUCCION}  (<${env.BUILD_URL}|Open>)"
