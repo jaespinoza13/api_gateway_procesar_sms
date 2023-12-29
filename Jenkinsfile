@@ -45,7 +45,7 @@ pipeline {
                         -e TZ=${TZ} \
                         -v ${RUTA_CONFIG}/appsettings.json:/app/appsettings.json \
                         -v ${RUTA_CONFIG}/ocelot.json:/app/ocelot.json/ \
-                        -v ${RUTA_LOGS}:/app/Logs/ \                                            
+                        -v ${RUTA_LOGS}:/app/Logs/ \
                          ${NOMBRE_IMAGEN}:${VERSION_DESPLIEGUE}
                     '''
             }
